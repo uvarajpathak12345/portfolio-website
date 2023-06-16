@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.card {
+width: 284px;
+    height: 368px;
+
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #FFE7CE;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin: 24px 36px;
+  position: relative;
+  margin-top: 100px;
+
+}
+.card:hover {
+  transform: scale(1.05);
+
+}
+.maindiv
+{
+	 display: flex;
+  justify-content: space-between;
+
+}
+
+.b1photo
+{
+	 width: 212px;
+  height: 212px;
+    
+    margin-top: 29px;
+  object-fit: cover;
+  justify-content: center;
+  display: inline-block;
+}
+.b1photodiv
+{
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.content {
+  padding: 16px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+
+p {
+  margin: 8px 0;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-position:center;
+    background-image: url(hi.png);
+    background-attachment: fixed;
+    background-size: cover;
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "HELLO";
+  color: white;
+
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="maindiv">
+		
+	
+<div class="card">
+	<div class="b1photodiv">
+		<img class="b1photo" src="skill.png">
+
+	</div>
+  <div class="content">
+
+    <h3>Title</h3>
+    <p>Description</p>
+  </div>
+</div>
+
+<div class="card">
+	<div class="b1photodiv">
+		<img class="b1photo" src="skill1.png">
+   
+	</div>
+  <div class="content">
+    <h3>Title</h3>
+    <p>Description</p>
+  </div>
+</div>
+
+
+
+<div class="card">
+	<div class="b1photodiv">
+		<img class="b1photo" src="skill2.png">
+   
+	</div>
+  <div class="content">
+    <h3>Title</h3>
+    <p>Description</p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
